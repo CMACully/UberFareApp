@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UberFareApp</string>
+    <string name="spnrCars">Choose a Car</string>
+    <string name="txtMiles"></string>
+    <string name="txtTotal">Total Due:</string>
+    <string name="imgUberLogo">UberLogo</string>
+</resources>

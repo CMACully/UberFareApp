@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A499C"
+    android:foreground="@drawable/uber_logo"
+    android:foregroundGravity="center"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spnrCars"
+        android:layout_width="352dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/spnrCars"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/txtTotal"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterMiles"  />
+
+    <EditText
+        android:id="@+id/enterMiles"
+        android:layout_width="179dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="340dp"
+        android:ems="10"
+        android:hint="Number of miles"
+        android:inputType="textPersonName"
+        android:textColor="#FFFEFE"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnrCars"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="getMileage"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/enterMiles" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
